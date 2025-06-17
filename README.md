@@ -66,6 +66,11 @@ create pod named nginx inside docker image
 kubectl run nginx --image=nginx
 ```
 describe the pod nginx
+it displays ip address of node (Node: minikube/192.168.49.2)
 ```powershell
 kubectl desctibe pod nginx
+```
+displays all the current docker containers running on ur system
+```powershell
+minikube ps
 ```
