@@ -74,3 +74,4 @@ displays all the current docker containers running on ur system
 ```powershell
 minikube ps
 ```
+index.mjs file is used because import statement is used instead of required statement
