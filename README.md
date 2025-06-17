@@ -75,3 +75,13 @@ displays all the current docker containers running on ur system
 minikube ps
 ```
 index.mjs file is used because import statement is used instead of required statement
+
+
+ in the dokcer file we have 
+ from node: alpine
+ expose port 3000
+ copy package.json and package-lock.json
+ then run npm install
+ this file will be copied to the app folder inside of the image
+ copy all remainig files to app folder
+ then npm start instruction is run
