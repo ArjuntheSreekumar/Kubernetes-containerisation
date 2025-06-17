@@ -61,8 +61,7 @@ To fetch namespaces at which pods are there
 ```powershell
 kubectl get namespaces
 ```
-create docker image nginx
-
+create pod named nginx inside docker image
 ```powershell
 kubectl run nginx --image=nginx
 ```
