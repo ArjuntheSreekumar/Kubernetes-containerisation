@@ -65,3 +65,7 @@ create pod named nginx inside docker image
 ```powershell
 kubectl run nginx --image=nginx
 ```
+describe the pod nginx
+```powershell
+kubectl desctibe pod nginx
+```
