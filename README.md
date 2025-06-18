@@ -85,3 +85,22 @@ index.mjs file is used because import statement is used instead of required stat
  this file will be copied to the app folder inside of the image
  copy all remainig files to app folder
  then npm start instruction is run
+alias k="kubectl"
+kubectl get pod
+kubectl get nodes
+k get deploy
+kubectl describe pod k8s-web-hello
+docker build . -t arjunsreekumar/k8s-web-hello
+docker login
+docker pull <podname>
+k rollout restart deployment
+minikube service k8s-web-hello
+ rolling update means if new bods r gone they are replaced with new ones-- if u del old pod new replaces
+kubectl set image deployment k8s-web-hello k8-web-hello=arjunsreekumar/k8-web-hello:3.0.0 this can be used to rollout
+kubectl rollout undo deployment k8s-web-hello can be used to rollback
+minikube dashboard
+
+kubectl delete all --all
+deletes the kubernetes service as well but is recreated after it
+Mi in memory means megabytes
+cpu 500 m means half of capability
