@@ -104,3 +104,11 @@ kubectl delete all --all
 deletes the kubernetes service as well but is recreated after it
 Mi in memory means megabytes
 cpu 500 m means half of capability
+
+
+
+docker push arjunsreekumar/k8s-web-to-nginx:v11
+kubectl set image deployment/k8s-web-to-nginx k8s-web-to-nginx=arjunsreekumar/k8s-web-to-nginx:v11
+kubectl rollout status deployment/k8s-web-to-nginx
+kubectl rollout restart deployment k8s-web-to-nginx
+minikube service k8s-web-to-nginx
